@@ -1,0 +1,36 @@
+.main {
+    max-width: 100px;
+}
+
+.option {
+    max-width: 100px;
+    cursor: pointer;
+    border-bottom: 1px solid #C8C8C8;
+    padding: 2px;
+    text-align: center;
+}
+
+.option:hover {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    cursor: pointer;
+    margin-bottom: 0px;
+    max-width: 100px;
+    text-align: center;
+    border: 2px solid #939393;
+}
+
+.lists {
+    border: 2px solid #939393;
+    max-width: 100px;
+}
+
+.active {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
