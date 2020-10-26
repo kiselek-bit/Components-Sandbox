@@ -57,7 +57,10 @@ export function CustomSelect(props: CustomSelectPropsType) {
     const onBlurHandler = () => props.clickOnCollapse && props.clickOnCollapse()
 
     return (
-        <div onKeyDown={onKeyDown} tabIndex={0} className={s.main} onBlur={onBlurHandler}>
+        <div onKeyDown={onKeyDown}
+             tabIndex={0}
+             className={s.main}
+             onBlur={onBlurHandler}>
 
             <h3 onClick={props.clickOnCollapse ? props.clickOnCollapse : () => {
             }}

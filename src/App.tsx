@@ -27,9 +27,7 @@ function App() {
     return (
         <div className="App">
             <UncontrolledAccordion
-                titleValue={'Menu'}
-                clickOnCollapse={clickOnCollapse}
-                collapsed={collapsed}/>
+                titleValue={'Menu'}/>
             <UncontrolledRating
                 starValue={starValue}
                 changeStarValue={changeStarValue}/>

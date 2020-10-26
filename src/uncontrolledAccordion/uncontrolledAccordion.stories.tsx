@@ -14,20 +14,14 @@ export default {
 } as Meta;
 
 export const AccordionCollapsedTrue = () => <UncontrolledAccordion titleValue={'Accordion'}
-                                                               clickOnCollapse={action('click')}
                                                                collapsed={true}/>
 
 export const AccordionCollapsedFalse = () => <UncontrolledAccordion titleValue={'Accordion'}
-                                                               clickOnCollapse={action('click')}
                                                                collapsed={false}/>
 
 export const ChangeAccordion = () => {
-    let [starValue, setStarValue] = useState<boolean>(true)
-
-    const onClickHandler = () => setStarValue(!starValue)
 
 
-    return <UncontrolledAccordion titleValue={'Accordion'}
-                                  collapsed={starValue}
-                                  clickOnCollapse={onClickHandler}/>
+
+    return <UncontrolledAccordion titleValue={'Accordion'}/>
 }

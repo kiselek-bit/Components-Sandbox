@@ -13,24 +13,30 @@ export default {
     },
 } as Meta;
 
-export const CustomSelectCollapsed = () => <CustomSelect titleValue={'Accordion'}
-                                                       collapse={true}
-                                                       items={[
-                                                           {title:'Belarus', value: 1},
-                                                           {title: 'Russia', value: 2},
-                                                           {title: 'Ukraine', value: 3}
-                                                       ]}
-                                                       onClickItem={() => {}}
-/>
+export const CustomSelectCollapsed = () => {
+    return <CustomSelect titleValue={'Accordion'}
+                         collapse={true}
+                         items={[
+                             {title: 'Belarus', value: 1},
+                             {title: 'Russia', value: 2},
+                             {title: 'Ukraine', value: 3}
+                         ]}
+                         onClickItem={() => {
+                         }}
 
-export const CustomSelectUncollapsed = () => <CustomSelect titleValue={'Accordion'}
-                                                        items={[
-                                                            {title:'Belarus', value: 1},
-                                                            {title: 'Russia', value: 2},
-                                                            {title: 'Ukraine', value: 3}
-                                                        ]}
-                                                        onClickItem={ value => alert(`i want changed title on ${value}`)}
-                                                        collapse={false}/>
+    />
+}
+
+export const CustomSelectUncollapsed = () => {
+    return <CustomSelect titleValue={'Accordion'}
+                         items={[
+                             {title: 'Belarus', value: 1},
+                             {title: 'Russia', value: 2},
+                             {title: 'Ukraine', value: 3}
+                         ]}
+                         onClickItem={value => alert(`i want changed title on ${value}`)}
+                         collapse={false}/>
+}
 
 export const ChangeCustomSelect = () => {
     let [starValue, setStarValue] = useState<boolean>(true)
@@ -39,12 +45,12 @@ export const ChangeCustomSelect = () => {
 
 
     return <CustomSelect titleValue={'Accordion'}
-                      clickOnCollapse={onClickHandler}
-                      onClickItem={ value => alert(`i want changed title on ${value}`)}
-                      items={[
-                          {title:'Belarus', value: 1},
-                          {title: 'Russia', value: 2},
-                          {title: 'Ukraine', value: 3}
-                          ]}
-                      collapse={starValue}/>
+                         clickOnCollapse={onClickHandler}
+                         onClickItem={value => alert(`i want changed title on ${value}`)}
+                         items={[
+                             {title: 'Belarus', value: 1},
+                             {title: 'Russia', value: 2},
+                             {title: 'Ukraine', value: 3}
+                         ]}
+                         collapse={starValue}/>
 }
